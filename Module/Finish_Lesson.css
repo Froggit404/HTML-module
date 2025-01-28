@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --white: #FFFFFE;
+  --light_grey_1: #EFF0F3;
+  --light_grey_2: #E4E5E9;
+  --grey: #C0C0C0;
+  --dark_grey: #9A9494;
+  --black: #2B2C34;
+  --blue: #6246EA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  width: 1440px;
+  background: var(--white);
+}
+
+.position {
+  position: relative;
+
+}
+
+/*--------------------------------------------------header---------------------------------------------------*/
+
+header {
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light_grey_1);
+  padding: 0 95px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+}
+
+header .dasteen {
+  padding-top: 26px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+header .dasteen h2 {
+  color: #001858;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+header .dasteen p {
+  width: 48px;
+  height: 27px;
+  color: var(--blue);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header nav ul {
+  width: 756px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+header nav ul li a {
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+header nav ul a:visited {
+  color: var(--black);
+}
+
+
+header nav ul .coffee {
+  width: 213px;
+  height: 44px;
+  display: flex;
+  padding: 10px 17px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--blue);
+}
+
+header nav ul .coffee a:first-child {
+  width: 24px;
+  height: 24px;
+}
+
+header nav ul .coffee a:last-child {
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/*-----------------------------------------------main---------------------------------------------------*/
+main {
+  /*height: 900px;*/
+  background-color: var(--light_grey_1);
+  padding: 250px 95px 263px 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 116px;
+}
+
+main .subscribe_block {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  height: 345px;
+
+}
+
+main .text-block {
+  width: 664px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+main .text-block h1 {
+  width: 617px;
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .text-block p {
+  width: 665px;
+  color: var(--dark_grey);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+  border-left: 3px solid;
+  border-color: var(--black);
+  padding-left: 9px;
+
+}
+
+main .subscribe_block .subscribe {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+
+
+}
+
+main .subscribe_block .subscribe #email {
+  width: 444px;
+  height: 67px;
+  display: flex;
+  padding: 29px 0 20px 25px;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--white);
+
+}
+
+main .subscribe_block .subscribe #email::placeholder {
+  width: 220px;
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+main .subscribe_block .subscribe #submit {
+  display: flex;
+  width: 145px;
+  height: 67px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--blue);
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+main .coding_boy{
+  padding-top: 5px;
+}
+
+/*--------------------------------------------section--------------------------------------------*/
+
+section {
+  /*height: 500px;*/
+  padding: 67px 95px 68px 95px;
+  background-color: var(--light_grey_1);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+section .text_section {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+section .text_section p {
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+section .text_section a {
+  color: var(--black);
+  text-align: right;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+section .text_section a:visited {
+  color: var(--black);
+}
+
+section .text_section svg {
+  margin-left: 8px;
+
+}
+
+section .card_section {
+  display: flex;
+  justify-content: space-between;
+  width: 1248px;
+  gap: 37px;
+  z-index: 2;
+}
+
+section .card_section .category:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  transition: 1s;
+
+}
+
+section .card_section .category {
+  width: 220px;
+  height: 280px;
+  padding: 65px 72px 95px 30px;
+  border-radius: 8px;
+  box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  transition: 0.5s;
+
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+section .card_section .category .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 7.5px;
+  background: var(--white);
+}
+
+
+/*---------------------------------------------aside album----------------------------------------------*/
+.album{
+  padding: 80px 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+}
+.album .album_section{
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.album .album_section .previews{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.album .album_section .text_section{
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.album .album_section .text_section p {
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.album .album_section .text_section a {
+  color: var(--black);
+  text-align: right;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.album .album_section .text_section a:visited {
+  color: var(--black);
+}
+
+.album .album_section .text_section svg {
+  margin-left: 10px;
+
+}
+
+.album .album_section .page{
+  display: flex;
+  width: 300px;
+  height: 425px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.album .album_section .page:hover{
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+  transition: 1s;
+
+}
+.album .album_section .page .photo_preview{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.album .album_section .page .description{
+  width: 260px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-left: 2px;
+}
+.album .album_section .page .description .description_text{
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.album .album_section .page .description .description_text p:first-child{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.album .album_section .page .description .description_text p:last-child{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  white-space: pre;
+}
+
+.album button{
+  width: 165px;
+  height: 64px;
+  display: flex;
+  padding: 20px 23px 19px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  /*transition: 1s;*/
+}
+/*.album button:hover{*/
+/*  scale: 1.06;*/
+/*  transition: 1s;*/
+/*}*/
+
+/*----------------------------------------------subscribe_section-------------------------------------------*/
+
+
+.subscribe_section{
+  height: 453px;
+  width: 1440px;
+  display: flex;
+  padding: 58px 372px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  background: var(--light_grey_1);
+  text-align: center;
+}
+
+.subscribe_section .mailbox{
+  height: 130px;
+  width: 130px;
+}
+.subscribe_section .mailbox img:first-child{
+  position: relative;
+  z-index: 1;
+}
+.subscribe_section .mailbox img:last-child{
+  position: absolute;
+  z-index: 2;
+  top: 3946px;
+  left: 655px;
+}
+
+.subscribe_section .text_block_bottom h3{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.subscribe_section .text_block_bottom p{
+  color: var(--grey);
+  text-align: center;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.subscribe_section .subscribe_bottom{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.subscribe_section .subscribe_bottom #email_bottom {
+  height: 67px;
+  width: 444px;
+  padding: 29px 200px 21px 25px;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--white);
+}
+
+.subscribe_section .subscribe_bottom #email_bottom::placeholder {
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.subscribe_section .subscribe_bottom #submit_bottom {
+  display: flex;
+  height: 67px;
+  padding: 20px 23px 19px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--blue);
+  color: var(--white);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/*----------------------------------------------footer---------------------------------------------*/
+
+footer{
+  width: 1440px;
+  background: var(--light_grey_2);
+}
+
+footer .dasteen_social{
+  padding: 70px 95px 50px 95px;
+  display: flex;
+gap: 160px;
+}
+
+footer .dasteen_social .dasteen_logo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .dasteen_social .dasteen_logo .dasteen_title{
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+footer .dasteen_social .dasteen_logo .dasteen_title h2 {
+  color: #001858;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+footer .dasteen_social .dasteen_logo .dasteen_title p {
+  width: 48px;
+  height: 27px;
+  color: var(--blue);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer .dasteen_social .dasteen_logo p{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer .dasteen_social .dasteen_logo .social_media{
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .dasteen_social .address{
+  display: flex;
+  gap: 95px;
+}
+footer .dasteen_social .address .list{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+footer .dasteen_social .address h3{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .dasteen_social .address .list a{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .dasteen_social .address .list .links li{
+  padding-bottom: 20px;
+}
+
+footer .dasteen_social .address .list .links a:visited{
+  color: var(--black);
+
+}
+footer hr{
+  margin: 0 95px;
+}
+footer .digital_dastin{
+  color: var(--black);
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 1208px 26px 95px;
+}
