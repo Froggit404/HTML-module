@@ -22,6 +22,8 @@
 body {
   width: 1440px;
   background: var(--white);
+  margin: 0 auto;
+
 }
 
 .position {
@@ -40,7 +42,7 @@ header {
   padding: 0 95px;
   position: fixed;
   z-index: 99;
-  width: 100%;
+  width: 1440px;
   box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
@@ -61,6 +63,7 @@ header .dasteen h2 {
 }
 
 header .dasteen p {
+  padding-left: 1px;
   width: 48px;
   height: 27px;
   color: var(--blue);
@@ -70,6 +73,7 @@ header .dasteen p {
 }
 
 header nav ul {
+  padding-top: 2px;
   width: 756px;
   display: flex;
   align-items: center;
@@ -90,8 +94,13 @@ header nav ul a:visited {
   color: var(--black);
 }
 
+header nav ul .search_link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-header nav ul .coffee {
+header nav ul button {
   width: 213px;
   height: 44px;
   display: flex;
@@ -100,14 +109,7 @@ header nav ul .coffee {
   gap: 10px;
   border-radius: 4px;
   background: var(--blue);
-}
-
-header nav ul .coffee a:first-child {
-  width: 24px;
-  height: 24px;
-}
-
-header nav ul .coffee a:last-child {
+  border: none;
   color: var(--white);
   font-family: "Plus Jakarta Sans", serif;
   font-size: 18px;
@@ -119,7 +121,7 @@ header nav ul .coffee a:last-child {
 main {
   /*height: 900px;*/
   background-color: var(--light_grey_1);
-  padding: 250px 95px 263px 95px;
+  padding: 245px 95px 263px 95px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +133,7 @@ main .subscribe_block {
   flex-direction: column;
   gap: 33px;
   height: 345px;
+  padding-top: 2px;
 
 }
 
@@ -217,7 +220,7 @@ main .coding_boy{
 
 section {
   /*height: 500px;*/
-  padding: 67px 95px 68px 95px;
+  padding: 62px 94px 68px 94px;
   background-color: var(--light_grey_1);
   display: flex;
   flex-direction: column;
@@ -225,10 +228,10 @@ section {
 }
 
 section .text_section {
-  height: 30px;
+  height: 35px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
@@ -240,7 +243,11 @@ section .text_section p {
   text-transform: capitalize;
 }
 
-section .text_section a {
+section .text_section .see_all_category {
+  padding-right: 7px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
   color: var(--black);
   text-align: right;
   font-family: "Plus Jakarta Sans", serif;
@@ -249,18 +256,17 @@ section .text_section a {
   text-transform: capitalize;
 }
 
+section .text_section .see_all_category svg{
+  margin-bottom: 2px;
+}
+
 section .text_section a:visited {
   color: var(--black);
 }
 
-section .text_section svg {
-  margin-left: 8px;
-
-}
-
 section .card_section {
+  padding: 0 2px;
   display: flex;
-  justify-content: space-between;
   width: 1248px;
   gap: 37px;
   z-index: 2;
@@ -269,8 +275,8 @@ section .card_section {
 section .card_section .category:hover {
   color: var(--white);
   background-color: var(--blue);
+  box-shadow: 4px 6px 13px 0 rgba(113, 113, 113, 0.25);
   transition: 1s;
-
 }
 
 section .card_section .category {
@@ -300,7 +306,7 @@ section .card_section .category .logo {
   align-items: center;
   width: 60px;
   height: 60px;
-  border-radius: 7.5px;
+  border-radius: 8px;
   background: var(--white);
 }
 
@@ -341,7 +347,11 @@ section .card_section .category .logo {
   text-transform: capitalize;
 }
 
-.album .album_section .text_section a {
+.album .album_section .text_section .see_all_article {
+  padding-right: 2px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
   color: var(--black);
   text-align: right;
   font-family: "Plus Jakarta Sans", serif;
@@ -354,9 +364,8 @@ section .card_section .category .logo {
   color: var(--black);
 }
 
-.album .album_section .text_section svg {
-  margin-left: 10px;
-
+.album .album_section .text_section .see_all_article svg {
+margin-bottom: 2px;
 }
 
 .album .album_section .page{
@@ -468,7 +477,7 @@ section .card_section .category .logo {
 .subscribe_section .mailbox img:last-child{
   position: absolute;
   z-index: 2;
-  top: 3946px;
+  top: 3941px;
   left: 655px;
 }
 
@@ -549,7 +558,7 @@ footer .dasteen_social .dasteen_logo{
 footer .dasteen_social .dasteen_logo .dasteen_title{
   display: flex;
   align-items: flex-end;
-  gap: 2px;
+  gap: 3px;
 }
 
 footer .dasteen_social .dasteen_logo .dasteen_title h2 {
@@ -577,14 +586,14 @@ footer .dasteen_social .dasteen_logo p{
 
 footer .dasteen_social .dasteen_logo .social_media{
   display: flex;
-  gap: 30px;
+  gap: 29px;
   justify-content: flex-start;
   align-items: center;
 }
 
 footer .dasteen_social .address{
   display: flex;
-  gap: 95px;
+  gap: 96px;
 }
 footer .dasteen_social .address .list{
   display: flex;
